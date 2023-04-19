@@ -1,2 +1,3 @@
-# Tinlist
-Repository List for Tin
+# Tin-Test
+Test repository for Tin. 
+Used for unit test cases.

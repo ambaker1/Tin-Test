@@ -15,4 +15,4 @@ proc ::tintest::bar {} {
     return [string toupper $message]
 }
 
-package provide tintest 0.1
+package provide tintest 0.1.1

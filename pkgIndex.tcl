@@ -1,0 +1,1 @@
+package ifneeded tintest 0.1 [list source [file join $dir tintest.tcl]]

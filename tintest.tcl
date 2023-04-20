@@ -2,7 +2,7 @@
 
 namespace eval ::tintest {
     variable message "Hello World!"
-    namespace export foo bar
+    namespace export foo bar foobar
 }
 
 proc ::tintest::foo {} {
@@ -15,4 +15,8 @@ proc ::tintest::bar {} {
     return [string toupper $message]
 }
 
-package provide tintest 0.1.1
+proc ::tintest::foobar {} {
+    return [list [foo] [bar]]
+}
+
+package provide tintest 0.2

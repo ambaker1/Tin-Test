@@ -19,4 +19,4 @@ proc ::tintest::foobar {{who World}} {
     return [list [foo $who] [bar $who]]
 }
 
-package provide tintest 0.3.1
+package provide tintest 0.3.2

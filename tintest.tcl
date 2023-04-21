@@ -12,15 +12,15 @@ proc ::tintest::foo {{who World}} {
 
 proc ::tintest::bar {{who World}} {
     variable greeting
-    return [string toupper "$greeting $who!"]
+    string toupper "$greeting $who!"
 }
 
 proc ::tintest::foo_bar {{who World}} {
-    return [list [foo $who] [bar $who]]
+    list [foo $who] [bar $who]
 }
 
 proc ::tintest::bar_foo {{who World}} {
-    return [list [bar $who] [foo $who]]
+    list [bar $who] [foo $who]
 }
 
-package provide tintest 1a0
+package provide tintest 1a1

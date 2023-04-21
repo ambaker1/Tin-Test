@@ -23,11 +23,11 @@ proc ::tintest::bar_foo {{who World}} {
     list [bar $who] [foo $who]
 }
 
-proc ::tinlist::boo {{who World}} {
+proc ::tintest::boo {{who World}} {
     bar [foo $who]
 }
 
-proc ::tinlist::far {{who World}} {
+proc ::tintest::far {{who World}} {
     foo [bar $who]
 }
 

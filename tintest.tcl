@@ -2,7 +2,7 @@
 
 namespace eval ::tintest {
     variable greeting "Hello"
-    namespace export foo bar foo_bar bar_foo
+    namespace export foo bar foo_bar bar_foo boo far
 }
 
 proc ::tintest::foo {{who World}} {
@@ -23,4 +23,12 @@ proc ::tintest::bar_foo {{who World}} {
     list [bar $who] [foo $who]
 }
 
-package provide tintest 1a1
+proc ::tinlist::boo {{who World}} {
+    bar [foo $who]
+}
+
+proc ::tinlist::far {{who World}} {
+    foo [bar $who]
+}
+
+package provide tintest 1b0

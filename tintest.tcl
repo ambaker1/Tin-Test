@@ -23,4 +23,4 @@ proc ::tintest::bar_foo {{who World}} {
     return [list [bar $who] [foo $who]]
 }
 
-package provide tintest 1.0
+package provide tintest 1a0

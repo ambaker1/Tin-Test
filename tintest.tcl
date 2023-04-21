@@ -15,8 +15,12 @@ proc ::tintest::bar {{who World}} {
     return [string toupper "$greeting $who!"]
 }
 
-proc ::tintest::foobar {{who World}} {
+proc ::tintest::foo_bar {{who World}} {
     return [list [foo $who] [bar $who]]
 }
 
-package provide tintest 0.3.2
+proc ::tintest::bar_foo {{who World}} {
+    return [list [bar $who] [foo $who]]
+}
+
+package provide tintest 1.0

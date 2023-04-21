@@ -1,4 +1,4 @@
-set version 0.3
+set version 0.3.1
 set dir [file join [file dirname [info library]] "tintest-$version"]
 file delete -force $dir
 file mkdir $dir

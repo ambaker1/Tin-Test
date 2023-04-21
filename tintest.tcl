@@ -2,7 +2,7 @@
 
 namespace eval ::tintest {
     variable greeting "Hello"
-    namespace export foo bar foobar
+    namespace export foo bar foo_bar bar_foo
 }
 
 proc ::tintest::foo {{who World}} {

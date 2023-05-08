@@ -49,4 +49,4 @@ proc ::tintest::far {{who World}} {
     foo [bar $who]
 }
 
-package provide tintest 1.0
+package provide tintest 1.1

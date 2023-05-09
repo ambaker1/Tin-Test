@@ -49,4 +49,10 @@ proc ::tintest::far {{who World}} {
     foo [bar $who]
 }
 
-package provide tintest 1.1
+# echo --
+# Returns what you put in
+proc ::tintest::echo {message} {
+    return $message
+}
+
+package provide tintest 1.2a0
